@@ -1,13 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import { FaHome, FaFlask, FaShoppingBag, FaPhoneAlt } from "react-icons/fa";
+import React from "react";
+import { FaHome, FaFlask, FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className=" pb-28 flex flex-col px-2 bg-green-200/30 items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className=" pb-28 flex flex-col px-2 bg-green-200/30 items-center justify-items-center min-h-screen font-sans">
       <div className="lg:w-2/3 md:w-4/5 w-full bg-black/50 my-5 py-4 px-4 rounded-2xl">
         <h3 className="text-3xl font-bold">Laboratoires</h3>
       </div>
@@ -24,14 +23,14 @@ export default function Page() {
           <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8">
             <h3 className="text-lg font-semibold text-white">Pfizer</h3>
             <p className="my-4">
-              Pfizer est l’un des plus grands laboratoires pharmaceutiques
+              Pfizer est l&lsquo;un des plus grands laboratoires pharmaceutiques
               mondiaux, célèbre pour ses médicaments dans divers domaines,
-              notamment les vaccins, l’oncologie, et les traitements
+              notamment les vaccins, l&lsquo;oncologie, et les traitements
               cardiovasculaires.
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center">
-            <img
+            <Image
               className="rounded-full w-9 h-9"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Pfizer_logo.svg/1024px-Pfizer_logo.svg.png"
               alt="Pfizer logo"
@@ -58,7 +57,7 @@ export default function Page() {
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center">
-            <img
+            <Image
               className="rounded-full w-9 h-9"
               src="https://upload.wikimedia.org/wikipedia/commons/5/51/Johnson_and_Johnson_logo_2021.svg"
               alt="Johnson & Johnson logo"
@@ -82,7 +81,7 @@ export default function Page() {
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center">
-            <img
+            <Image
               className="rounded-full w-9 h-9"
               src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Roche_logo.svg"
               alt="Roche logo"
@@ -106,7 +105,7 @@ export default function Page() {
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center">
-            <img
+            <Image
               className="rounded-full w-9 h-9"
               src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Novartis_logo.svg"
               alt="Novartis logo"
@@ -133,7 +132,7 @@ export default function Page() {
             href=""
             className="text-white underline underline-offset-4 hover:text-green-500"
           >
-            Conditions d'Utilisation
+            Conditions d&lsquo;Utilisation
           </Link>
           <Link
             href=""

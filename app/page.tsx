@@ -1,20 +1,21 @@
 "use client";
 import Image from "next/image";
 import { AnimatePresence, motion, useInView } from "framer-motion";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
-import { FaHome, FaFlask, FaShoppingBag, FaPhoneAlt } from "react-icons/fa";
+import { FaHome, FaFlask, FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
 
 gsap.registerPlugin(Draggable);
 
-export default function Home({ text = "Pharmagram" }: { text: string }) {
+export default function Home() {
+  const text = "Pharmagram";
   const ref = useRef(null);
   const inView = useInView(ref);
 
   return (
-    <div className="pb-28 relative flex flex-col px-2 bg-green-200/30 items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="pb-28 relative flex flex-col px-2 bg-green-200/30 items-center justify-items-center min-h-screen font-sans">
       <div className="lg:w-2/3 md:w-4/5 w-full bg-black/50 my-5 py-4 px-4 rounded-2xl">
         <h3 className="text-3xl font-bold">Acceuil</h3>
       </div>
@@ -44,7 +45,7 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
       </div>
 
       <div className="relative isolate overflow-hidden bg-gray-900 w-11/12 lg:w-2/3 md:w-4/5 py-24 mx-auto shadow-lg shadow-black rounded-lg">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt=""
           className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
@@ -82,8 +83,8 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
               Pharmagram révolutionne le secteur pharmaceutique en connectant
               les professionnels de santé et les patients grâce à une plateforme
               intuitive. Nous mettons à votre disposition des outils innovants
-              pour faciliter l'accès aux médicaments, améliorer le suivi des
-              traitements, et garantir une meilleure prise en charge des
+              pour faciliter l&lsquo;accès aux médicaments, améliorer le suivi
+              des traitements, et garantir une meilleure prise en charge des
               patients.
             </p>
           </div>
@@ -119,9 +120,9 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
             <p className="mt-2 text-slate-500">
               Suivez en temps réel les quantités de produits disponibles grâce à
               une interface dédiée. Recevez des notifications automatiques
-              lorsqu’un produit atteint un seuil critique, vous permettant
-              d'éviter les ruptures de stock et d'assurer une gestion optimale
-              de vos inventaires.
+              lorsqu&lsquo;un produit atteint un seuil critique, vous permettant
+              d&lsquo;éviter les ruptures de stock et d&lsquo;assurer une
+              gestion optimale de vos inventaires.
             </p>
           </div>
         </div>
@@ -143,10 +144,10 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
               Commandes en ligne et gestion centralisée
             </div>
             <p className="mt-2 text-slate-500">
-              Recevez des commandes directement via l’application et suivez
-              chaque détail des commandes depuis leur réception jusqu'à leur
-              livraison. Gérez toutes vos transactions de manière centralisée
-              pour un suivi facile et rapide.
+              Recevez des commandes directement via l&lsquo;application et
+              suivez chaque détail des commandes depuis leur réception
+              jusqu&lsquo;à leur livraison. Gérez toutes vos transactions de
+              manière centralisée pour un suivi facile et rapide.
             </p>
           </div>
         </div>
@@ -193,10 +194,10 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
               Gestion des ordonnances en ligne
             </div>
             <p className="mt-2 text-slate-500">
-              Permettez à vos clients d’envoyer leurs ordonnances directement
-              via la plateforme, simplifiant ainsi le processus de commande.
-              Vous pouvez valider et préparer les commandes rapidement en
-              fonction des prescriptions reçues.
+              Permettez à vos clients d&lsquo;envoyer leurs ordonnances
+              directement via la plateforme, simplifiant ainsi le processus de
+              commande. Vous pouvez valider et préparer les commandes rapidement
+              en fonction des prescriptions reçues.
             </p>
           </div>
         </div>
@@ -253,8 +254,9 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
             <p className="mt-2 text-slate-500">
               Accédez rapidement à une large gamme de produits de santé,
               médicaments et équipements, directement depuis votre smartphone.
-              L'interface intuitive vous permet de rechercher facilement des
-              articles, parcourir les catégories ou découvrir des promotions.
+              L&lsquo;interface intuitive vous permet de rechercher facilement
+              des articles, parcourir les catégories ou découvrir des
+              promotions.
             </p>
           </div>
         </div>
@@ -273,13 +275,13 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
           </div>
           <div className="p-8">
             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-              Téléchargement d’ordonnances simplifié
+              Téléchargement d&lsquo;ordonnances simplifié
             </div>
             <p className="mt-2 text-slate-500">
               Besoin de commander un médicament ? Téléchargez votre ordonnance
-              directement dans l’application et laissez notre système
+              directement dans l&lsquo;application et laissez notre système
               intelligent identifier rapidement les produits dont vous avez
-              besoin. C'est simple, rapide et efficace.
+              besoin. C&lsquo;est simple, rapide et efficace.
             </p>
           </div>
         </div>
@@ -302,9 +304,9 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
             </div>
             <p className="mt-2 text-slate-500">
               Gagnez du temps grâce à notre service de livraison. Commandez vos
-              produits en quelques clics et recevez-les chez vous ou à l’adresse
-              de votre choix dans les délais les plus courts. Suivez en temps
-              réel chaque étape de votre commande.
+              produits en quelques clics et recevez-les chez vous ou à
+              l&lsquo;adresse de votre choix dans les délais les plus courts.
+              Suivez en temps réel chaque étape de votre commande.
             </p>
           </div>
         </div>
@@ -326,10 +328,10 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
               Paiements sécurisés et flexibles
             </div>
             <p className="mt-2 text-slate-500">
-              Profitez d’un système de paiement sécurisé adapté à vos besoins.
-              Que vous préfériez payer en ligne avec une carte bancaire, via des
-              services mobiles ou à la livraison, notre plateforme garantit des
-              transactions fiables.
+              Profitez d&lsquo;un système de paiement sécurisé adapté à vos
+              besoins. Que vous préfériez payer en ligne avec une carte
+              bancaire, via des services mobiles ou à la livraison, notre
+              plateforme garantit des transactions fiables.
             </p>
           </div>
         </div>
@@ -371,7 +373,7 @@ export default function Home({ text = "Pharmagram" }: { text: string }) {
             href=""
             className="text-white underline underline-offset-4 hover:text-green-500"
           >
-            Conditions d'Utilisation
+            Conditions d&lsquo;Utilisation
           </Link>
           <Link
             href=""

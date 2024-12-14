@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Image from "next/image";
-import React, { useEffect } from "react";
-import { FaHome, FaFlask, FaShoppingBag, FaPhoneAlt } from "react-icons/fa";
+import React from "react";
+import { FaHome, FaFlask, FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="pb-28 flex flex-col px-2 bg-green-200/30 items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="pb-28 flex flex-col px-2 bg-green-200/30 items-center justify-items-center min-h-screen font-sans">
       <div className="lg:w-2/3 md:w-4/5 w-full bg-black/50 my-5 py-4 px-4 rounded-2xl">
         <h3 className="text-3xl font-bold">Contact</h3>
       </div>
@@ -22,11 +21,11 @@ export default function Page() {
         </h1>
         <p className="text-lg font-normal text-gray-200 lg:text-xl dark:text-gray-400">
           Chez Pharmagram, nous nous concentrons sur les marchés où la
-          technologie, l'innovation et les solutions digitales peuvent débloquer
-          une valeur à long terme et stimuler la croissance de l'industrie
-          pharmaceutique. Notre plateforme est conçue pour améliorer
-          l'efficacité des pharmacies, des laboratoires et des professionnels de
-          santé dans le monde entier.
+          technologie, l&lsquo;innovation et les solutions digitales peuvent
+          débloquer une valeur à long terme et stimuler la croissance de
+          l&lsquo;industrie pharmaceutique. Notre plateforme est conçue pour
+          améliorer l&lsquo;efficacité des pharmacies, des laboratoires et des
+          professionnels de santé dans le monde entier.
         </p>
       </div>
 
@@ -84,7 +83,7 @@ export default function Page() {
             href=""
             className="text-white underline underline-offset-4 hover:text-green-500"
           >
-            Conditions d'Utilisation
+            Conditions d&lsquo;Utilisation
           </Link>
           <Link
             href="faqs"
