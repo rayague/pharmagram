@@ -72,7 +72,7 @@ export default function Page() {
       </div>
 
       <footer className="w-11/12 lg:w-2/3 md:w-4/5 flex flex-col gap-4 py-6">
-        <div className="flex flex-row w-full items-center justify-center space-x-4 ">
+        <div className="flex flex-col lg:flex-row md:flex-row space-y-2 lg:space-y-0 w-full items-center justify-center space-x-4 ">
           <Link
             href="/politiques"
             className="text-white underline underline-offset-4 hover:text-green-500"
@@ -86,7 +86,7 @@ export default function Page() {
             Conditions d&lsquo;Utilisation
           </Link>
           <Link
-            href="faqs"
+            href=""
             className="text-white underline underline-offset-4 hover:text-green-500"
           >
             Faqs
@@ -97,7 +97,7 @@ export default function Page() {
           ©{" "}
           <Link
             href="/"
-            className="underline underline-offset-4 text-green-500"
+            className=" text-green-500 underline underline-offset-4"
           >
             Pharmagram.
           </Link>{" "}

@@ -45,11 +45,6 @@ export default function Home() {
       </div>
 
       <div className="relative isolate overflow-hidden bg-gray-900 w-11/12 lg:w-2/3 md:w-4/5 py-24 mx-auto shadow-lg shadow-black rounded-lg">
-        <Image
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt=""
-          className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
-        />
         <div
           className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
           aria-hidden="true"
@@ -100,9 +95,6 @@ export default function Home() {
       </div>
 
       <div className="w-11/12 lg:w-2/3 md:w-4/5 mx-auto bg-white rounded-xl overflow-hidden mb-6 shadow-lg shadow-black">
-        <h2 className="text-xl font-bold text-center mb-4 text-indigo-600">
-          Avantages pour les Pharmacies
-        </h2>
         <div className="md:flex">
           <div className="md:shrink-0">
             <Image
@@ -114,7 +106,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Gestion des stocks simplifiée
             </div>
             <p className="mt-2 text-slate-500">
@@ -140,7 +132,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Commandes en ligne et gestion centralisée
             </div>
             <p className="mt-2 text-slate-500">
@@ -165,7 +157,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Statistiques avancées pour des décisions éclairées
             </div>
             <p className="mt-2 text-slate-500">
@@ -190,7 +182,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Gestion des ordonnances en ligne
             </div>
             <p className="mt-2 text-slate-500">
@@ -215,7 +207,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Livraison à domicile
             </div>
             <p className="mt-2 text-slate-500">
@@ -248,7 +240,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Accès facile aux produits
             </div>
             <p className="mt-2 text-slate-500">
@@ -274,7 +266,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Téléchargement d&lsquo;ordonnances simplifié
             </div>
             <p className="mt-2 text-slate-500">
@@ -299,7 +291,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Livraison rapide et fiable
             </div>
             <p className="mt-2 text-slate-500">
@@ -324,7 +316,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Paiements sécurisés et flexibles
             </div>
             <p className="mt-2 text-slate-500">
@@ -349,7 +341,7 @@ export default function Home() {
             />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+            <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">
               Assistance client 24/7
             </div>
             <p className="mt-2 text-slate-500">
