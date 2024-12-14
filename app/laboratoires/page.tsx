@@ -32,7 +32,9 @@ export default function Page() {
           <figcaption className="flex items-center justify-center">
             <Image
               className="rounded-full w-9 h-9"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Pfizer_logo.svg/1024px-Pfizer_logo.svg.png"
+              src="/assets/picture28.jpg"
+              height={500}
+              width={500}
               alt="Pfizer logo"
             />
             <div className="space-y-0.5 font-medium text-left rtl:text-right ms-3">
@@ -59,7 +61,9 @@ export default function Page() {
           <figcaption className="flex items-center justify-center">
             <Image
               className="rounded-full w-9 h-9"
-              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Johnson_and_Johnson_logo_2021.svg"
+              src="/assets/picture31.jpg"
+              height={500}
+              width={500}
               alt="Johnson & Johnson logo"
             />
             <div className="space-y-0.5 font-medium text-left rtl:text-right ms-3">
@@ -83,7 +87,9 @@ export default function Page() {
           <figcaption className="flex items-center justify-center">
             <Image
               className="rounded-full w-9 h-9"
-              src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Roche_logo.svg"
+              src="/assets/picture29.jpg"
+              height={500}
+              width={500}
               alt="Roche logo"
             />
             <div className="space-y-0.5 font-medium text-left rtl:text-right ms-3">
@@ -107,7 +113,9 @@ export default function Page() {
           <figcaption className="flex items-center justify-center">
             <Image
               className="rounded-full w-9 h-9"
-              src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Novartis_logo.svg"
+              src="/assets/picture30.jpg"
+              height={500}
+              width={500}
               alt="Novartis logo"
             />
             <div className="space-y-0.5 font-medium text-left rtl:text-right ms-3">
